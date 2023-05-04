@@ -1,0 +1,18 @@
+{
+  "bookedTickets": [
+    {
+      "name": "Sumit Jain",
+      "flightId": "SMT-121",
+      "tickets": 2,
+      "amount": 1000,
+      "id": "oUm21ID"
+    },
+    {
+      "name": "Sumit Jain",
+      "tickets": 2,
+      "flightId": "SMT-1234",
+      "amount": 4000,
+      "id": "375YUfK"
+    }
+  ]
+}

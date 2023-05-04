@@ -1,0 +1,33 @@
+<app-home></app-home>
+
+
+<mat-card class="example-card">
+   <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+     <mat-card-title>Flight Booking System</mat-card-title>
+     <mat-card-subtitle>Your Flight Booking Details.</mat-card-subtitle>
+   </mat-card-header>
+   <mat-card-content>
+    <mat-list>
+        <mat-list-item>
+            <div matLine>
+                Passenger Name:
+                <button mat-button>{{userDetails.name}}</button>
+            </div>
+            <div matLine>
+                Flight Id:
+                <button mat-button>{{userDetails.flightId}}</button>
+            </div>
+            <div matLine>
+                Tickets:
+                <button mat-button>{{userDetails.tickets}}</button>
+            </div>
+            <div matLine>
+                Amount:
+                <button mat-button>{{userDetails.amount | currency: 'INR'}}</button>
+            </div>
+
+        </mat-list-item>
+    </mat-list>
+   </mat-card-content>
+</mat-card>

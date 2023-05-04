@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+    <mat-icon>airplanemode_active</mat-icon>
+    <span>Flight Booking System</span>
+    <span class="example-spacer"></span>
+    <button  mat-raised-button [routerLink]="['/booking-flight']">Book Flight</button>
+    <button style="margin-left: 10px;" [routerLink]="['/view-booked']" mat-raised-button color="accent">View Details</button>
+    <button style="margin-left: 10px;" mat-raised-button color="warn" [routerLink]="['/booking-flight']">Logout</button>
+</mat-toolbar>

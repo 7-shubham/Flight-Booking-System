@@ -1,0 +1,30 @@
+<h2 mat-dialog-title>Update the User Details</h2>
+
+<div mat-dialog-content>
+    <form action="" [formGroup]="bookingDetails">
+        <mat-form-field appearance="outline">
+            <mat-label>Passenger Name</mat-label>
+            <input matInput placeholder="Placeholder"  formControlName="name">
+        </mat-form-field>
+   
+        <mat-form-field appearance="outline">
+            <mat-label>Flight Id</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="flightId">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Tickets</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="tickets">
+        </mat-form-field>
+
+        <mat-form-field  appearance="outline">
+            <mat-label>Amount</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="amount">
+        </mat-form-field>
+    </form>
+</div>
+
+<div mat-dialog-actions [align]="'end'">
+    <button mat-raised-button mat-dialog-close>Close</button>
+    <button mat-raised-button color="primary" (click)="onUpdate()">Update</button>
+</div>
